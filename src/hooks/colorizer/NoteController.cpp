@@ -65,7 +65,7 @@ MAKE_HOOK_MATCH(NoteController_Update, &NoteController::ManualUpdate, void, Note
 
       [[maybe_unused]] bool updated = false;
       std::optional<Sombrero::FastColor> colorOffset =
-          AnimationHelper::GetColorOffset(pathPointDefinition, tracks, normalTime, updated, TimeUnit());
+          AnimationHelper::GetColorOffset(pathPointDefinition, tracks, normalTime, updated, 0);
 
       if (colorOffset) {
         static auto* BombNoteControllerKlass = classof(BombNoteController*);

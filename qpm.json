@@ -1,12 +1,11 @@
 {
-  "$schema": "https://raw.githubusercontent.com/QuestPackageManager/QPM.Package/refs/heads/main/qpm.schema.json",
   "version": "0.4.0",
   "sharedDir": "shared",
   "dependenciesDir": "extern",
   "info": {
     "name": "Chroma",
     "id": "chroma",
-    "version": "2.9.4",
+    "version": "2.8.1",
     "url": "https://github.com/bsq-ports/Chroma",
     "additionalData": {
       "headersOnly": true,
@@ -17,9 +16,6 @@
     "scripts": {
       "build": [
         "pwsh ./scripts/build.ps1 --release"
-      ],
-      "clean": [
-        "pwsh ./scripts/build.ps1 -clean"
       ],
       "copy": [
         "pwsh ./scripts/copy.ps1"
@@ -39,12 +35,12 @@
   "dependencies": [
     {
       "id": "beatsaber-hook",
-      "versionRange": "^6.4.2",
+      "versionRange": "^6.1.7",
       "additionalData": {}
     },
     {
       "id": "custom-types",
-      "versionRange": "^0.18.3",
+      "versionRange": "^0.18.0",
       "additionalData": {
         "includeQmod": true,
         "private": true
@@ -52,7 +48,7 @@
     },
     {
       "id": "bs-cordl",
-      "versionRange": "4007.*",
+      "versionRange": "^4006.0.0",
       "additionalData": {
         "includeQmod": true,
         "private": true
@@ -67,14 +63,14 @@
     },
     {
       "id": "config-utils",
-      "versionRange": "^2.0.3",
+      "versionRange": "^2.0.0",
       "additionalData": {
         "private": true
       }
     },
     {
       "id": "bsml",
-      "versionRange": "^0.4.54",
+      "versionRange": "^0.4.8",
       "additionalData": {
         "includeQmod": true,
         "private": true
@@ -82,12 +78,12 @@
     },
     {
       "id": "conditional-dependencies",
-      "versionRange": "^0.3.0",
+      "versionRange": "*",
       "additionalData": {}
     },
     {
       "id": "sombrero",
-      "versionRange": "^0.1.43",
+      "versionRange": "^0.1.37",
       "additionalData": {}
     },
     {
@@ -106,14 +102,14 @@
     },
     {
       "id": "scotland2",
-      "versionRange": "^0.1.6",
+      "versionRange": "^0.1.0",
       "additionalData": {
         "includeQmod": false
       }
     },
     {
       "id": "songcore",
-      "versionRange": "^1.1.23",
+      "versionRange": "^1.1.0",
       "additionalData": {
         "includeQmod": true,
         "private": true
@@ -121,7 +117,7 @@
     },
     {
       "id": "paper2_scotland2",
-      "versionRange": "^4.6.4",
+      "versionRange": "^4.4.1",
       "additionalData": {}
     }
   ]
